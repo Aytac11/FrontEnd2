@@ -1,0 +1,151 @@
+*,*::after,*::before{
+    box-sizing: border-box;
+}
+
+.w-15{width: 15% }
+.w-20 { width: 20% }
+.w-25 { width: 25% }
+.w-30 { width: 30% }
+.w-33 { width: 33.333% }
+.w-40 { width: 40% }
+.w-45 { width: 45% }
+.w-50 { width: 50% }
+.w-55 { width: 55% }
+.w-60 { width: 60% }
+.w-70 { width: 70% }
+.w-75 { width: 75% }
+.w-80 { width: 80% }
+.w-24 { width: 24% }
+.w-100 { width: 100% }
+.text-center { text-align: center }
+
+.h-20{ height: 20% }
+.h-40{ height: 40% }
+.h-50{ height: 50% }
+.h-60{ height: 60% }
+.h-80{ height: 80% }
+.h-100{ height: 100% }
+.h-125{ height: 125% }
+.h-130{ height: 130% }
+
+.m-0{ margin: 0 }
+.mb-60{ margin-bottom: 60px }
+
+.pl-15{ padding-left: 15px }
+.pl-30{padding-left: 30px }
+.pl-70{padding-left: 70px }
+
+.pr-15{ padding-right: 15px }
+
+.pt-50{ padding-top: 50px }
+.pt-5{ padding-top: 5px }
+.pb-0{ padding-bottom: 0 }
+.pb-15{ padding-bottom: 15px }
+.pb-30{ padding-bottom: 30px }
+
+.br-bottom{ border-bottom: 1px solid #97aab0;}
+
+.d-flex{ display: flex }
+
+.bg-051e56{ background-color: #051e56;}
+
+.logo{
+    width: 50px;
+}
+
+.header{
+    padding: 10px;
+}
+.f-d-column{ flex-direction: column;}
+
+.m-photo{
+    max-width: 100%;
+    height: auto;
+  
+}
+
+.container, .info, .btn,.sec4-right{
+    margin: 0 auto;
+}
+
+.btn{
+    background-color: #fddf61;
+    display: block;
+    padding: 8px 13px;
+    width: 20%;
+    text-decoration: none;
+    border-radius: 6px;
+    color: black;
+}
+
+.btn-l{
+    margin-left: 0;
+    margin-bottom: 30px;
+}
+.sec3, .sec6{
+    padding-bottom: 60px;
+    padding-top: 8px;
+}
+
+.sec4, .sec5{
+    
+    color: #8ddbff;
+    overflow: hidden;
+}
+
+.sec4-right,.sec5-left{
+    background-color: #34a1e7;
+    padding-left: 60px;
+}
+
+.s4-left,.s5-right{
+    width: 100%;
+    height: 100%;
+}
+
+.sec5-left{
+    background-color: white;
+    color: black;
+}
+
+.sec6{
+    background-color:  #fddf61;
+    width: 100%;
+}
+
+.btn-c{
+    background-color:  #051e56 !important;
+    color: white;
+}
+
+.sec6 p{
+    margin: 0 auto 25px auto;
+}
+
+.img{
+    height: 150px;
+}
+
+.icons{
+    justify-content: center;
+    padding: 30px 0 15px 0;
+}
+
+.icon{
+    width: 15px;
+    height: 15px;
+}
+
+.icon-container{
+    padding-left: 15px;
+}
+footer p{
+    margin: 5px auto;
+}
+
+@media only screen and (max-width: 600px){
+
+    
+
+}
+
