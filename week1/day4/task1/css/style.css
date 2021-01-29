@@ -49,9 +49,11 @@
 
 .bg-051e56{ background-color: #051e56;}
 
+.of-cover{ object-fit: cover }
 
-
-@media only screen and (max-width: 650px){
+.container{
+    width: 50%;
+}
 
     .logo{
         width: 50px;
@@ -147,5 +149,5 @@
         margin: 5px auto;
     }
 
-}
+
 

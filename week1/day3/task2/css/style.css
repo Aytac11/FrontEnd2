@@ -66,7 +66,7 @@ body{
 
 .header{
     margin-top: 10px;
-    background-image: url("images/globus.png");
+    background-image: url("../images/globus.png");
     background-color: #39585d;
     height: 250px;
     background-position: right top;

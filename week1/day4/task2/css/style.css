@@ -54,12 +54,14 @@
 
 .d-flex{ display: flex }
 
+.bg-63be79{
+    background: #63be79;
+}
+
 .f-d-column{flex-direction: column;}
 
-
-@media only screen and (max-width: 650px){
     .container{
-        width: 80%;
+        width: 40%;
         margin: 0 auto;
     }
     
@@ -124,5 +126,5 @@
         margin-bottom: 20px;
     }
     
-}
+
 
