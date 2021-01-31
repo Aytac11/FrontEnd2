@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h4>Almaguin Campgroup - Reservation</h4>
+        </header>
+
+        <form action="#">
+            <div class="d-flex p-10-0">
+                <label class="w-20 o-hidden" for="accomodation">Accomodation</label>
+                <div class="w-80">
+                    <select class="w-20" id="accomodation">
+                        <option value="rv">RV</option>
+                        <option value="bv">BV</option>
+                        <option value="cv">CV</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="d-flex p-10-0">
+                <label class="w-20" for="name">Name</label>
+                <div class="w-80 d-flex">
+                    <select class="w-20"  name="gender" id="name">
+                        <option value="mr">Mr</option>
+                        <option value="mrs">Mrs</option>
+                    </select>
+                    <input class="w-40 m-0-8" type="text" placeholder="First Name">
+                    <input class="w-40" type="text" placeholder="Last Name">
+                </div>
+            </div>
+
+            <div class="d-flex p-10-0">
+                <label class="w-20" for="guests">Guests</label>
+                <div class="w-80 d-flex">
+                    <input class="w-20" type="text" placeholder="18+ years">
+                    <input class="w-40 m-0-8" type="text" placeholder="2-17 years">
+                    <input class="w-40" type="text" placeholder=" < 2 years">
+                </div>
+            </div>
+
+            <div class="d-flex p-10-0">
+                <label class="w-20" for="contact">Contact</label>
+                <input class="w-80" type="email" placeholder="E-mail">
+            </div>
+
+            <div class="d-flex p-10-0">
+                <div class="w-20"></div>
+                <input class="w-80" type="tel" placeholder="Phone:(xxx) - xxx xxxx">
+            </div>
+
+            <div class="d-flex p-10-0">
+                    <label class="w-20" for="checkin">Checkin</label>
+                    <div class="w-80">
+                        <input class="w-30" type="date">
+                        <label class="p-0 pl-40" for="checkout">Checkout</label>
+                        <input class="w-30" type="date">
+                    </div>
+           </div>
+
+            <div class="d-flex p-10-0">
+                <label class="w-20" for="equipment">Equioment type</label>
+                <div class="w-80">
+                    <select name="" id="equipment">
+                        <option value="travel">Travel</option>
+                        <option value="travel">Travel</option>
+                        <option value="travel">Travel</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="d-flex p-10-0">
+                <label class="w-20" for="required">Required Service</label>
+                <div class="w-80">
+                    <select  name="" id="required" size="3">
+                        <option value="hydro">Hydro</option>
+                        <option value="water">Water</option>
+                        <option value="sewer">Sewer</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="d-flex p-10-0">
+                <label class="w-20" for="pets">Pets</label>
+                <div class="w-80 d-flex">
+                    <input type="radio" id="yes" >
+                    <label for="female">Yes</label><br>
+                    <input type="radio" id="no" >
+                    <label for="other">No</label>
+                </div>
+            </div>
+
+            <div class="d-flex p-10-0">
+                <label class="w-20" for="comment">Comment</label>
+                <input class="w-80" type="text" placeholder="Additional comments">
+            </div>
+
+            <div class="d-flex p-10-0 ">
+                <div class="w-20"></div>
+                <div class="w-80 d-flex j-content">
+                    <button class="w-30 btn btn-l">Request Reservation</button>
+                    <button class="btn btn-r">Cancel</button>
+                </div>
+            </div>
+
+        </form>
+
+    </div>
+</body>
+</html>

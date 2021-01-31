@@ -1,0 +1,190 @@
+*,*:after, *:before{
+    box-sizing: border-box;
+}
+
+.pt-22{ padding-top: 22px;}
+
+body{
+    background: #f7f6f2;
+}
+
+.container{
+    width: 70%;
+    margin: 0 auto;
+}
+
+header h1{
+    margin-bottom: 0;
+}
+
+header p{
+    margin: 0;
+}
+
+nav{
+    display: flex;
+    background: #020202;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+li{
+    list-style: none;
+    padding: 10px 20px;
+}
+
+li a{
+    text-decoration: none;
+    color: white;
+}
+
+
+nav li:first-child{
+    background: #c84551;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.artikle, .center,footer{
+    display: flex;
+    background: white;
+    margin: 25px 0;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.left{
+    width: 60%;
+    padding: 20px 90px 10px 20px;
+    padding-bottom: 10px;
+}
+
+.left h3,h4,p{
+    margin: 0;
+    padding-bottom: 10px;
+}
+
+.left h3, a{
+    color: #c84551;
+}
+
+p{
+    line-height: 1.3;
+}
+
+
+.right{
+    width: 40%;
+}
+
+.right p{
+    padding-left: 60px;
+    color: #b4b9b5;
+    line-height: 1;
+}
+
+.logo{
+    border: 1px solid #ebe9e9;
+    padding: 10px;
+    width: 80%;
+    margin: 0;
+    border-radius: 5px;
+}
+
+.logo img{
+    object-fit: cover;
+    width: 80%;
+}
+
+.center{
+    padding: 20px;
+    flex-direction: column;
+}
+
+.item{
+    display: flex;
+    padding: 20px;
+}
+
+
+.center-left{
+    width: 25%;
+}
+
+.center-right{
+    width: 75%;
+}
+
+.center-right h3{
+    margin: 0;
+    color: #c84551;
+}
+
+.line{
+    border: 1px solid #ebe9e9;
+    width: 100%;
+}
+
+.services{
+    display: flex;
+    justify-content: space-between;
+    margin: 25px 0;
+}
+
+.service h3{
+    margin: 0;
+    color:  #c84551;
+}
+
+.service li{
+    padding: 3px 0;
+    line-height: 1.4;
+}
+
+.group{
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+
+.social-link {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.icon {
+	display: block;
+	width: 15px;
+	height: 15px;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+.icon-db { background-image: url('../img/delicious-brands.svg'); }
+.icon-fb { background-image: url('../img/facebook.svg') }
+.icon-tw { background-image: url('../img/twitter.png') }
+
+footer{
+    padding: 10px 25px;
+}
+
+footer div{
+    width: 25%;
+}
+
+footer img{
+    width: 100%;
+}
+
+.footer-img{
+    width: 10%;
+}
+
+.footer-content{
+    width: 65%;
+}
+
+footer h3{
+    margin-bottom: 0;
+}

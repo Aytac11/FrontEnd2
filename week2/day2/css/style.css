@@ -1,0 +1,206 @@
+.header_up {
+    display: flex;
+}
+
+.header_up .header_up_left {
+    width: 30%;
+    background: aliceblue;
+}
+
+.header_up .header_up_left h4 {
+    padding: 25px 30px;
+    color: #e07a00;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.header_up .header_up_right {
+    width: 70%;
+    text-align: right;
+    background: antiquewhite;
+}
+
+.header_up .header_up_right span {
+    display: inline-block;
+    padding: 29px 60px;
+    color: #e07a00;
+}
+
+.header_up .header_up_right span a {
+    text-decoration: none;
+    color: #e07a00;
+}
+
+.header_down .menu {
+    display: flex;
+}
+
+.header_down .menu li {
+    width: 16.6%;
+    padding: 15px 30px;
+    background: #ab0000;
+    color: #fff;
+    border-right: 1px solid #fff;
+}
+
+.header_down .menu li:last-child {
+    border: none;
+    background-color: #e07a00
+}
+
+.coffee_slider .slider img {
+    max-width: 100%;
+    display: block;
+}
+
+.coffeee_advetisment {
+    background: antiquewhite;
+}
+
+.coffeee_advetisment h4 {
+    padding: 30px 45px;
+    font-size: 30px;
+    color: #e27f09;
+}
+
+.coffeee_advetisment p {
+    padding: 0px 45px;
+    line-height: 22px;
+    font-style: oblique;
+}
+
+.coffeee_advetisment button {
+    margin: 2% 45%;
+    padding: 13px 20px;
+    background: #bd7e0a;
+    border: none;
+    border-radius: 15px;
+}
+
+.coffeee_advetisment button a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.orders_section {
+    padding: 60px;
+}
+
+.orders_section h4 {
+    text-align: center;
+    font-size: 30px;
+    color: #b96501;
+    padding-bottom: 30px;
+}
+
+.orders_section .order_list {
+    display: flex;
+}
+
+.orders_section .order_list .order {
+    margin: 0px 15px;
+}
+
+.orders_section .order_list .order img {
+    max-width: 100%;
+    border-radius: 15px;
+}
+
+.orders_section .order_list .order .order_text p {
+    line-height: 20px;
+    font-style: oblique;
+}
+
+.orders_section .order_list .order .order_text button {
+    margin: 5% 35%;
+    padding: 15px 30px;
+    background: orange;
+    border: none;
+    border-radius: 15px;
+}
+
+.orders_section .order_list .order .order_text button a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.coffee_bg {
+    background-image: url(../img/coffee-beans-on-sackcloth-for-background-.jpg);
+    height: 160px;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.coffee_plans {
+    background: #e0960f;
+    display: flex;
+}
+
+.coffee_plans .coffee_plans_left {
+    width: 45%;
+}
+
+.coffee_plans .coffee_plans_left h4 {
+    text-align: center;
+    margin-top: 65px;
+    margin-bottom: 25px;
+    font-size: 30px;
+    color: #fff;
+}
+
+.coffee_plans .coffee_plans_left p {
+    width: 60%;
+    margin-left: 23%;
+    line-height: 25px;
+    color: #fff;
+    font-style: oblique;
+}
+
+.coffee_plans .coffee_plans_right {
+    width: 55%;
+}
+
+.coffee_plans .coffee_plans_right img {
+    max-width: 100%;
+    display: block;
+}
+
+footer {
+    background: #ab0909;
+    padding: 45px;
+    text-align: center;
+}
+
+footer .social_menu .social_menu_list {
+    display: flex;
+    margin: 0 40%;
+}
+
+footer .social_menu .social_menu_list li {
+    padding: 10px 15px;
+    background: #333;
+    margin: 0 10px;
+    border-radius: 100px;
+    cursor: pointer;
+    transition: all .5s;
+}
+
+footer .social_menu .social_menu_list li:hover {
+    background-color: bisque;
+}
+
+footer .social_menu .social_menu_list li:hover i {
+    color: rgb(13, 13, 223);
+}
+
+footer .social_menu .social_menu_list li i {
+    color: #fff;
+}
+
+footer .footer_text p {
+    margin-top: 15px;
+    font-size: 22px;
+    color: #fff;
+    font-style: oblique;
+}
