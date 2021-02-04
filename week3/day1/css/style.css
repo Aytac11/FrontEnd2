@@ -80,35 +80,54 @@ nav li a{
     text-decoration: none;
 }
 
+nav li a:active:hover{
+    text-decoration: underline;
+    color: white;
+}
+
+nav li a:hover{
+    color: #e74c3c;
+}
+
 header h1{
     font-size: 60px;
     color: white;
     font-family: 'Rokkitt', serif;
     font-weight: 300;
-    height: 46vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: -1;
-    padding-bottom: 25px;
+    z-index: 1;
+    padding-bottom: 0 40px 25px 40px;
+    margin: 0;
+    border-bottom: 1px solid white;
 }
 
-.line{
+.header-h{
+    height: 46vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-h h2{
+    z-index: 1;
+}
+
+/* .line{
     border-top: 1px solid white;
     width: 50%;
     position: absolute;
     top: 62%;
     left: 53%;
     transform: translateX(-54%);
-}
+} */
 
 header h2{
     font-size: 22px;
     font-family: 'Quicksand', sans-serif;
-    position: absolute;
+    /* position: absolute;
     top: 66%;
     left: 50%;
-    transform: translate(-48%,-50%);
+    transform: translate(-48%,-50%); */
     color: white;
     font-weight: 200;
 }
@@ -230,15 +249,16 @@ header h2{
     background-color: #e74c3c;
 	position: absolute;
 	top: 5%;
-	right: 5%;
+    right: 5%;
+    border: 5px solid #bc3323;
 }
 
 .search-icon{
-    margin: 5px;
+    margin: 10px;
 	background-image: url('../img/icon-search.png');
-	display: block;
-	width: 20px;
-	height: 20px;
+    display: block;
+	width: 15px;
+	height: 15px;
 	background-size: contain;
 	background-repeat: no-repeat;	
 }
@@ -249,6 +269,7 @@ header h2{
     right: 0;
     color: white;
     background-color:  #e74c3c;
+    border-top: 4px solid #bc3323;
 }
 
 .bottom p{
