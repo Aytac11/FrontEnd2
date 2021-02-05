@@ -5,6 +5,8 @@
     opacity: 0.5;
 }
 
+.w-18{ width: 18px;}
+
 .w-50{ width: 50%;}
 .w-100{ width: 100%;}
 
@@ -95,7 +97,7 @@ header h1{
     font-family: 'Rokkitt', serif;
     font-weight: 300;
     z-index: 1;
-    padding-bottom: 0 40px 25px 40px;
+    padding: 0 40px 25px 40px;
     margin: 0;
     border-bottom: 1px solid white;
 }
@@ -112,22 +114,9 @@ header h1{
     z-index: 1;
 }
 
-/* .line{
-    border-top: 1px solid white;
-    width: 50%;
-    position: absolute;
-    top: 62%;
-    left: 53%;
-    transform: translateX(-54%);
-} */
-
 header h2{
     font-size: 22px;
     font-family: 'Quicksand', sans-serif;
-    /* position: absolute;
-    top: 66%;
-    left: 50%;
-    transform: translate(-48%,-50%); */
     color: white;
     font-weight: 200;
 }
@@ -235,6 +224,7 @@ header h2{
     width: 400px;
     height: 250px;
     display: block;
+    cursor: pointer;
 }
 
 .image-container{
@@ -243,6 +233,12 @@ header h2{
 
 .image-container .overlay{
     opacity: 0.5;
+    transition: all 40s ease;  /* islemir( */
+}
+
+.image-container:hover .overlay{
+    display: none;
+    
 }
 
 .icon-container2{
@@ -280,27 +276,28 @@ header h2{
 .btn-view{
     margin: 72px auto 127px auto;
     position: relative;
-    background-color: #e74c3c;
-    color: white;
-    text-transform: uppercase;
-    width: 17%;
-    padding: 12px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .btn-view-more{
+    background-color: #e74c3c;
+    color: white;
+    text-transform: uppercase;
     border: none;
     text-decoration: none;
-    padding-right: 18px;
-    padding-left: 9px;
+    padding: 12px;
     color: white;
 }
 
 .icon-container3{
+    background-color: #e74c3c;
+    display: flex;
+    align-items: center;
+    
     width: 30px;
-    height: 25px;
+    height: 42px;
 }
 
 .arrow-icon{
@@ -344,6 +341,7 @@ form{
     color: #cecece;
     font-size: 20px;
     font-family: 'Rokkitt', serif;
+    outline: none;
 }
 
 .footer-icons{
@@ -366,7 +364,8 @@ form{
 }
 
 .footer-icon {
-    display: block;
+    display: flex;
+    justify-content: center;
     width: 35px;
     height: 35px;
     background-size: contain;
@@ -375,7 +374,9 @@ form{
 
 .icon-tw { background-image: url('../img/twitter.png') }
 .icon-db { background-image: url('../img/dribbble.png') }
-.icon-fb { background-image: url('../img/facebook.png') }
+.icon-fb { 
+    background-image: url('../img/facebook.png'); 
+    margin-left: 16px;}
 
 footer{
     background: #e74c3c;
