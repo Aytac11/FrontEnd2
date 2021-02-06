@@ -216,7 +216,6 @@ input{
 
 .goods-container{
     display: flex;
-    padding: 25px 0;
 }
 
 .goods{
@@ -224,6 +223,7 @@ input{
     display: flex;
     align-items: center;
     border-right: 1px solid #e7e7e7;
+    padding: 25px 0;
 }
 
 .goods:last-child{
