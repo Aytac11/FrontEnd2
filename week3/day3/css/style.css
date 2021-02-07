@@ -45,7 +45,7 @@ header{
 
 .icon-search { 
     background-image: url('../img/search-icon.png'); 
-
+    padding-left: 49px;
 }
 
 .form-input,
@@ -67,7 +67,8 @@ header{
 
 .form-submit {
 	width: 22px;
-	height: 22px;
+    height: 22px;
+    padding-left: 48px;
 }
 
 .icon-search-container{
@@ -78,10 +79,6 @@ header{
     display: flex;
     align-items: center;
     height: 35px;
-}
-
-.icon-search{
-    padding-left: 49px;
 }
 
 input{
