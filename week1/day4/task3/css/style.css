@@ -79,6 +79,7 @@
 .header{
     background-color: #202423;
     border-bottom: 4px solid #bcd143;
+    align-items: center;
 }
 
 .m-0-auto{
@@ -90,7 +91,8 @@
 }
 
 .list{
-    height: 50px;
+    padding-top: 25px;
+    padding-bottom: 25px;
     align-items: center;
     padding-left: 0;
     justify-content: space-evenly;
@@ -104,13 +106,6 @@
 
 .home{
     color: #bcd143 !important;
-}
-
-.left{
-    height: 250px;
-    background-position: right top;
-    background-repeat: no-repeat;
-    background-size: 50%;
 }
 
 .image-container{
