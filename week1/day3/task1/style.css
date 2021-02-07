@@ -49,6 +49,7 @@ span{
     font-size: medium;
 }
 
+.p-0{ padding: 0 }
 
 .p-left-25{
     padding-left: 25px;
@@ -99,3 +100,5 @@ hr{
     width: 92%;
     color: #ededed;
 }
+
+.l-style{ list-style: none;}
