@@ -1,3 +1,7 @@
+*,*::after,*::before{
+    box-sizing: border-box;
+}
+
 header{
     background: #1a1e27;
 }
@@ -60,19 +64,17 @@ header{
     align-items: center;
 }
 
-.grap span{
+.grap-text{
     color: white;
     display: inline-flex;
     font-family: 'Hind Siliguri', sans-serif;
     font-size: 14px;
+    margin-right: 10px;
 }
 
 .icon-rss-container{
-    width: 20px;
-    height: 20px;
     display: flex;
     align-items: center;
-    padding-left: 10px;
 }
 .icon-rss{
     background-image: url('../img/rss_48.png');
@@ -119,7 +121,7 @@ header{
 	padding-left:8px;
     border: 1px solid #e1e1e1;
     border-radius: 5px;
-    /* padding-right: 40px; */
+    padding-right: 20px;
 }
 
 .form-submit {
@@ -133,7 +135,7 @@ header{
 .icon-search-container{
     position: absolute;
     top: 12%;
-    right: 0;
+    right: 2px;
     cursor: pointer;
     display: flex;
     align-items: center;
@@ -329,7 +331,14 @@ input{
     margin-left: 15px;
     margin-right: 45px;
     color: #1a1e27;
-    
+}
+
+.author-reaction p{
+    width: 245px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    display: block;
 }
 
 .left-img-container img{
@@ -349,7 +358,7 @@ input{
 }
 
 .f-content{
-    height: 98px;
+    max-height: 98px;
     overflow: hidden;
 }
 
@@ -371,6 +380,11 @@ input{
     font-weight: 600;
     font-size: 14px;
     padding: 2px 7px;
+    width: 91px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    display: block;
 }
 
 .lefter-center-item{
@@ -481,13 +495,6 @@ input{
     display: flex;
     align-items: center;
     
-}
-
-.icon{
-    display: inline-flex;
-	background-size: contain;
-	background-repeat: no-repeat;
-	background-position: center; 
 }
 
 .icon-list{ 
