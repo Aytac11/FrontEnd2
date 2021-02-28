@@ -233,12 +233,11 @@ header h2{
 
 .image-container .overlay{
     opacity: 0.5;
-    transition: all 40s ease;  /* islemir( */
+    transition: all 400ms ease;  
 }
 
 .image-container:hover .overlay{
     display: none;
-    
 }
 
 .icon-container2{
@@ -302,9 +301,10 @@ header h2{
 
 .arrow-icon{
     background-image: url(../img/Arrow-icon.png);
-    width: 30px;
-    height: 25px;
+    width: 20px;
+    height: 15px;
     background-repeat: no-repeat;
+    background-size: contain;
 }
 
 .myForm{

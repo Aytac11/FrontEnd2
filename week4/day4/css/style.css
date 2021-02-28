@@ -153,6 +153,10 @@ figure { margin: 0; }
 .top-21{ top: 21%;}
 .left-8{ left: 8%;}
 
+.key{
+  font-size: 25px;
+}
+
 @media (max-width: 576px) {
   .image{ transform: translateY(0);}
   hr{
@@ -201,6 +205,10 @@ figure { margin: 0; }
     }
 
     .bg-brown {background-image: url('../img/brown-15723.png');}
+
+    .key{
+      font-size: 30px;
+    }
 }
 
 /* Large */

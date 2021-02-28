@@ -158,7 +158,8 @@ p{
 	width: 15px;
 	height: 15px;
 	background-size: contain;
-	background-repeat: no-repeat;
+    background-repeat: no-repeat;
+    margin-right: 6px;
 }
 
 .icon-db { background-image: url('../img/delicious-brands.svg'); }
