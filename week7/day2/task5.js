@@ -16,7 +16,7 @@ for(let i = 0; i < word.length; i++){
             count++;
             if(count>1){
                 repeat = true;
-                
+                break;
             }
             
         }
