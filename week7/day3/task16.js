@@ -13,6 +13,7 @@ const find = (num1) =>{
 console.log(find(10));
 
 
+
 // let num1 = 0;
 // let num2 = 1;
 // let c;
