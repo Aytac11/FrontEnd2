@@ -3,6 +3,8 @@
 // 18, 3 => 2 (izah: 18:3=6, 6:3=2, 2:3=0.66). Cavab 2
 // 19, 5 => 19 (izah: 19:5=3.8). Cavab 19
 
+
+//-----------method1-----------------
 let num1 = 15;
 let num2 = 3;
 let r ;
@@ -22,7 +24,6 @@ while(num1>1){
 console.log(num1)
 
 //--------------method2----------------
-let test = 100;
 
 const myLoop = (num1, divide) => {
 	while(num1 % divide === 0) {
