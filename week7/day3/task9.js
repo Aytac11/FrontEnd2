@@ -1,7 +1,18 @@
-const str = "abc";
-let s = "";
+// pop
 
-for (let i = 0; i < str.length-1; i++) {
-    s += str[i];
+const popMy = (arr) =>{
+    let s = arr[0];
+
+    for (let i = 1; i < arr.length-1; i++) {
+        s += "," + arr[i];
+    }
+
+    arr.length = 0;
+    
+    for(let j=0; j<arr.length; j++){
+        arr+=s[j];
+    }
+    return arr;
 }
-console.log(s);
+
+console.log(popMy(["abc","xcv","qwe"]));
