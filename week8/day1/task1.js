@@ -1,21 +1,21 @@
 let arr = [1, 1, 2, 3, 2, 2, 2, 8, 8, 1, 9];
-// let c = 0;
-// for(let i=0; i<arr.length-1; i++){
-//     for(let j=0; j<arr.length; j++){
-//         if(arr[i] === arr[j] && arr[i] === arr[i+1]){
-//             c++;
-//         }
-//     }
-// }
+let obj;
+let count = 1;
+let max = 0;
+let num;
 
-// console.log(c);
+for (let i = 0; i < arr.length - 1; i++) {
+	if(arr[i] === arr[i+1]) {
+		count++;
 
-let t;
-let s = "";
-for(let i=0; i<arr.length-1; i++){
-    if(arr[1] == arr[i+1]){
-        t++;
-    }
+		if(count > max) {
+			max = count;
+			num = arr[i];
+			obj = {count: max, number: arr[i]};
+		}
+	} else {
+		count = 1;
+	}
 }
 
-console.log(t);
+console.log(obj);
