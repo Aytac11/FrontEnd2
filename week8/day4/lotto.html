@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html,
+        body,
+        button {
+            height: 100%;
+            width: 100%;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <button id="next">Get Next Daş</button>
+    <script src="lotto.js"></script>
+    <script>
+        const out = [];
+
+        console.log(getCard());
+
+        document.querySelector('#next').addEventListener('click', e => {
+            console.log(turn());
+        });
+    </script>
+</body>
+
+</html>

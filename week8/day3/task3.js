@@ -42,12 +42,12 @@ function findCount(arr) {
         }
         prev = arr[i];
     }
+    let q = [];
     for (let j = 0; j < a.length; j++) {
         obj = { "Element": a[j], "Count": b[j] }
-        console.log(obj);
-
+        q[j] = obj;
     }
-    return "complete";
+    return q;
 }
 
 console.log(findCount([10, 2, 10, 2, 5]))
