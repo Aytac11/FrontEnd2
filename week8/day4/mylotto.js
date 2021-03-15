@@ -17,6 +17,7 @@ const indexOf = (arr, search) => {
 
 let out = [];
 const turn = () => {
+
     const max = 5;
     let rand = random(1, max);
 
@@ -31,45 +32,41 @@ const turn = () => {
     return turn();
 }
 
+console.log(turn())
+
 const getIntervalIndex = (num) => {
-    if (num >= 1 && num <= 9) {
+    if (num < 10) {
         return 0;
     }
-
-    if (num === 90) {
-        return 8;
-    }
-
-    for (let i = 9; i <= 79; i += 10) {
-        if (num >= i + 1 && num <= i + 10) {
+    for (let i = 9; i < 79; i += 10) {
+        if (num > i && num <= i + 10) {
             return (i + 1) / 10;
         }
     }
+    if (vum = 90) {
+        return 8;
+    }
 }
 
+console.log(getIntervalIndex(48));
 
-const getCard = () => {
-    const rowEmpty = [];
+const generateCard = () => {
     let row = [];
     const card = [];
-    const repeated = []; // hansı index-də neçə dəfə rəqəm çıxıb 
+    const repeated = [];
+    const emptyRow = [];
 
     for (let i = 0; i < 9; i++) {
-        push(rowEmpty, '');
-        push(repeated, 0); // [0,0,0,0,0,0,0,0]
+        push(emptyRow, '');
+        push(repeated, 0);
     }
 
     for (let j = 0; j < 3; j++) {
-        row = [...rowEmpty]; // ['','','','','','','','']
+        row = [...emptyRow];
 
         for (let i = 0; i < 5; i++) {
             const rand = random(1, 90);
-            const numIndex = getIntervalIndex(rand); // meselen, 32 - 2-ci, 55 - 4-cu, 90 - 8-ci index
-
-            // əgər çıxan daşın index-ində rəqəm varsa
-            // və ya çıxan daşın index-ində 2 və daha çox təkrarlanma varsa
-            // və ya (2-ci və yuxarı cərgədəyəmsə və index-də təkrar olunmayan rəqəm varsa və çıxan rəqəm təkrarlanmamış index-də deyilsə)
-            // YENIDƏN TƏZƏ RƏQƏM ÇIXART
+            const numIndex = getIntervalIndex(rand);
             if (typeof row[numIndex] === 'number' || repeated[numIndex] >= 2 ||
                 (j > 0 && indexOf(repeated, 0) !== -1 && indexOf(repeated, 0) !== numIndex)) {
                 i--;
