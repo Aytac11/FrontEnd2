@@ -18,7 +18,7 @@ const indexOf = (arr, search) => {
 let out = [];
 const turn = () => {
 
-    const max = 5;
+    const max = 90;
     let rand = random(1, max);
 
     if (indexOf(out, rand) === -1) {
@@ -32,7 +32,7 @@ const turn = () => {
     return turn();
 }
 
-console.log(turn())
+// console.log(turn())
 
 const getIntervalIndex = (num) => {
     if (num < 10) {
@@ -48,13 +48,22 @@ const getIntervalIndex = (num) => {
     }
 }
 
-console.log(getIntervalIndex(48));
+const checkSingularity = (arr, elem) => {
+    for (let i = 0; i < arr.length; i++) {
+        if (elem == arr[i]) {
+            return true
+        }
+    }
+    return false
+}
+
 
 const generateCard = () => {
     let row = [];
     const card = [];
     const repeated = [];
     const emptyRow = [];
+    let randContainer = [];
 
     for (let i = 0; i < 9; i++) {
         push(emptyRow, '');
@@ -68,11 +77,12 @@ const generateCard = () => {
             const rand = random(1, 90);
             const numIndex = getIntervalIndex(rand);
             if (typeof row[numIndex] === 'number' || repeated[numIndex] >= 2 ||
-                (j > 0 && indexOf(repeated, 0) !== -1 && indexOf(repeated, 0) !== numIndex)) {
+                (j > 0 && indexOf(repeated, 0) !== -1 && indexOf(repeated, 0) !== numIndex) ||
+                checkSingularity(randContainer, rand)) {
                 i--;
                 continue;
             }
-
+            push(randContainer, rand);
             row[numIndex] = rand;
             repeated[numIndex]++;
         }
@@ -80,7 +90,26 @@ const generateCard = () => {
         push(card, row);
     }
 
-    console.log(repeated);
+    // console.log(repeated);
+
+    return card;
+}
+
+let card = generateCard();
+let turns = turn();
+// console.log(turns)
+console.log(card);
+const staticRemove = (card, turn) => {
+    let character = "x";
+
+    for (let i = 0; i < card.length; i++) {
+        for (let j = 0; j < card[i].length; j++) {
+            if (turn[turn.length - 1] === card[i][j] || turn[0] === card[i][j]) {
+                card[i][j] = character;
+
+            }
+        }
+    }
 
     return card;
 }
