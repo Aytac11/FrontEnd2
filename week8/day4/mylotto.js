@@ -48,16 +48,6 @@ const getIntervalIndex = (num) => {
     }
 }
 
-const checkSingularity = (arr, elem) => {
-    for (let i = 0; i < arr.length; i++) {
-        if (elem == arr[i]) {
-            return true
-        }
-    }
-    return false
-}
-
-
 const generateCard = () => {
     let row = [];
     const card = [];
@@ -78,7 +68,7 @@ const generateCard = () => {
             const numIndex = getIntervalIndex(rand);
             if (typeof row[numIndex] === 'number' || repeated[numIndex] >= 2 ||
                 (j > 0 && indexOf(repeated, 0) !== -1 && indexOf(repeated, 0) !== numIndex) ||
-                checkSingularity(randContainer, rand)) {
+                indexOf(randContainer, rand) !== -1) {
                 i--;
                 continue;
             }
@@ -96,17 +86,15 @@ const generateCard = () => {
 }
 
 let card = generateCard();
-let turns = turn();
-// console.log(turns)
 console.log(card);
-const staticRemove = (card, turn) => {
+const remove = (card, turn) => {
     let character = "x";
 
     for (let i = 0; i < card.length; i++) {
         for (let j = 0; j < card[i].length; j++) {
             if (turn[turn.length - 1] === card[i][j] || turn[0] === card[i][j]) {
                 card[i][j] = character;
-
+                console.log(" find");
             }
         }
     }

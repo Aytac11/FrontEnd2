@@ -21,8 +21,9 @@
     <script src="mylotto.js"></script>
     <script>
         document.querySelector('#next').addEventListener('click', e => {
-            console.log(turn());
-            console.log(staticRemove(card, turns));
+            const turns = turn();
+            console.log(turns[turns.length - 1]);
+            console.log(remove(card, turns));
         });
     </script>
 </body>
