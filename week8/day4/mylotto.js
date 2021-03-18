@@ -91,12 +91,22 @@ const remove = (card, turn) => {
     let character = "x";
 
     for (let i = 0; i < card.length; i++) {
+        let count = 0;
         for (let j = 0; j < card[i].length; j++) {
+
             if (turn[turn.length - 1] === card[i][j] || turn[0] === card[i][j]) {
                 card[i][j] = character;
-                console.log(" find");
+                console.log("find");
+            }
+
+            if (card[i][j] == "x" || card[i][j] == "") {
+                count++;
+            }
+            if (count === 9) {
+                console.log(`${i+1}th row is full`);
             }
         }
+
     }
 
     return card;

@@ -15,9 +15,8 @@ const indexOf = (arr, search) => {
     return -1;
 }
 
-let out = [];
 const turn = () => {
-    const max = 5;
+    const max = 90;
     let rand = random(1, max);
 
     if (indexOf(out, rand) === -1) {
@@ -52,7 +51,8 @@ const getCard = () => {
     const rowEmpty = [];
     let row = [];
     const card = [];
-    const repeated = []; // hansı index-də neçə dəfə rəqəm çıxıb 
+    const repeated = []; // hansı index-də neçə dəfə rəqəm çıxıb
+    const out = [];
 
     for (let i = 0; i < 9; i++) {
         push(rowEmpty, '');
@@ -71,6 +71,7 @@ const getCard = () => {
             // və ya (2-ci və yuxarı cərgədəyəmsə və index-də təkrar olunmayan rəqəm varsa və çıxan rəqəm təkrarlanmamış index-də deyilsə)
             // YENIDƏN TƏZƏ RƏQƏM ÇIXART
             if (typeof row[numIndex] === 'number' || repeated[numIndex] >= 2 ||
+                (indexOf(out, rand) >= 0) ||
                 (j > 0 && indexOf(repeated, 0) !== -1 && indexOf(repeated, 0) !== numIndex)) {
                 i--;
                 continue;
@@ -78,12 +79,25 @@ const getCard = () => {
 
             row[numIndex] = rand;
             repeated[numIndex]++;
+            push(out, rand);
         }
 
         push(card, row);
     }
 
-    console.log(repeated);
-
     return card;
+}
+
+
+const checkCardNumber = (num, cards = []) => {
+    const numIndex = getIntervalIndex(num);
+    for (let i = 0; i < cards.length; i++) {
+        if (num === cards[i][numIndex]) {
+            cards[i][numIndex] = 'X';
+            //return cards;
+            console.log(`${num} ${i+1}-ci sirada tapildi`);
+        }
+    }
+
+    return cards;
 }
