@@ -85,29 +85,51 @@ const generateCard = () => {
     return card;
 }
 
-let card = generateCard();
-console.log(card);
-const remove = (card, turn) => {
+const generateTicket = () => {
+    let ticket = [];
+    for (let i = 0; i < 2; i++) {
+        push(ticket, generateCard());
+    }
+    return ticket;
+}
+
+// console.log(generateTicket());
+
+// let card = generateCard();
+// console.log(card);
+let ticket = generateTicket();
+console.log(ticket);
+const remove = (ticket, turn) => {
     let character = "x";
 
-    for (let i = 0; i < card.length; i++) {
-        let count = 0;
-        for (let j = 0; j < card[i].length; j++) {
+    for (let x = 0; x < ticket.length; x++) {
+        for (let i = 0; i < ticket[x].length; i++) {
+            let count = 0;
+            for (let j = 0; j < ticket[x][i].length; j++) {
 
-            if (turn[turn.length - 1] === card[i][j] || turn[0] === card[i][j]) {
-                card[i][j] = character;
-                console.log("find");
+                if (turn[turn.length - 1] === ticket[x][i][j] || turn[0] === ticket[x][i][j]) {
+                    ticket[x][i][j] += `<span class = "overlay"></span>` //character;
+                    console.log("find");
+                }
+
+                //if (ticket[x][i][j] == "x" || ticket[x][i][j] == "") {
+                if (typeof ticket[x][i][j] === 'string') {
+                    count++;
+                }
+
+                if (count === 9) {
+                    if (ticket[x] === ticket[0]) {
+                        console.log(`In first card ${i+1}th row is full`);
+                    } else {
+                        console.log(`In second card ${i+1}th row is full`);
+                    }
+                }
+                if (count === 8) {
+                    console.log("Only one step needed to win");
+                }
             }
 
-            if (card[i][j] == "x" || card[i][j] == "") {
-                count++;
-            }
-            if (count === 9) {
-                console.log(`${i+1}th row is full`);
-            }
         }
-
     }
-
-    return card;
+    return ticket;
 }
