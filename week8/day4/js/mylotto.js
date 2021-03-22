@@ -100,7 +100,7 @@ const generateTicket = () => {
 let ticket = generateTicket();
 console.log(ticket);
 const remove = (ticket, turn) => {
-    let character = "x";
+    // let character = "x";
 
     for (let x = 0; x < ticket.length; x++) {
         for (let i = 0; i < ticket[x].length; i++) {
