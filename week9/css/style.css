@@ -54,6 +54,7 @@ body {
 }
 
 .navbar-nav {
+    width: 100%;
     display: flex;
     align-items: center;
     padding: 0;
@@ -65,6 +66,10 @@ body {
 
 .nav-item {
     padding: 5%;
+}
+
+.navbar-collapse {
+    justify-content: center;
 }
 
 .center {
@@ -402,14 +407,34 @@ footer {
         height: 50px;
         width: 60px;
     }
+    .icons {
+        margin-top: 27%;
+    }
 }
 
 
 /* Large */
 
-@media (min-width: 992px) {}
+@media (min-width: 992px) {
+    .icons {
+        margin-top: 11%;
+    }
+    .download {
+        width: 40%;
+    }
+    .navbar {
+        padding-top: 0;
+    }
+}
 
 
 /* Extra Large */
 
-@media (min-width: 1200px) {}
+@media (min-width: 1440px) {
+    .download {
+        width: 23%;
+    }
+    .icons {
+        margin-top: 8%;
+    }
+}
