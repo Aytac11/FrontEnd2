@@ -31,13 +31,14 @@ body {
     background-size: cover;
 }
 
-.container-fluid1 {
-    height: 500px;
-}
-
 .nav-link {
     color: white !important;
     text-transform: uppercase;
+    font-size: 10px;
+}
+
+.nav-item-logo {
+    height: 0;
 }
 
 .icon {
@@ -47,25 +48,17 @@ body {
     background-size: contain;
 }
 
-.logo {
-    background-image: url(../img/Livello-2.png);
-    height: 55px;
-    width: 55px;
-}
-
 .navbar-nav {
     width: 100%;
     display: flex;
+    justify-content: center;
     align-items: center;
     padding: 0;
 }
 
 .navbar {
     padding-top: 50px;
-}
-
-.nav-item {
-    padding: 5%;
+    justify-content: flex-end;
 }
 
 .navbar-collapse {
@@ -103,7 +96,7 @@ body {
 .icons {
     display: flex;
     justify-content: center;
-    margin-top: 15%;
+    margin-bottom: 20px;
 }
 
 .icon span {
@@ -384,9 +377,9 @@ footer {
         padding: 11px 40px;
         font-size: 14px;
     }
-    .container-fluid1 {
+    /* .container-fluid1 {
         height: 743px;
-    }
+    } */
     .center {
         height: 400px;
     }
@@ -407,23 +400,31 @@ footer {
         height: 50px;
         width: 60px;
     }
-    .icons {
+    /* .icons {
         margin-top: 27%;
-    }
+    } */
 }
 
 
 /* Large */
 
 @media (min-width: 992px) {
-    .icons {
-        margin-top: 11%;
+    .navbar {
+        padding-top: 0;
+    }
+    .logo {
+        background-image: url(../img/Livello-2.png);
+        height: 55px;
+        width: 55px;
+    }
+    .nav-item {
+        padding: 5%;
+    }
+    .nav-item-logo {
+        height: auto;
     }
     .download {
         width: 40%;
-    }
-    .navbar {
-        padding-top: 0;
     }
 }
 
@@ -434,7 +435,7 @@ footer {
     .download {
         width: 23%;
     }
-    .icons {
+    /* .icons {
         margin-top: 8%;
-    }
+    } */
 }
