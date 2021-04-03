@@ -1,0 +1,19 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+#main {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.box {
+    position: relative;
+    z-index: 1;
+    float: left;
+    height: 100px;
+    width: 100px;
+    background-color: rgb(212, 208, 190);
+}
