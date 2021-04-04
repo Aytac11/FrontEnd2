@@ -12,15 +12,25 @@ function change_background(event) {
 }
 
 
-// let box = document.createElement('div');
-// for (var i = 0; i <= 20129; i++) {
-//     str += box.addEventListener('onmouseover', function(event) {
+// var items = document.querySelectorAll('.item');
 
-//         var randomRed = Math.floor(Math.random() * 255);
-//         var randomGreen = Math.floor(Math.random() * 255);
-//         var randomBlue = Math.floor(Math.random() * 255);
-//         event.target.style = "background-color: rgb(" + randomRed + "," + randomGreen + "," + randomBlue + ")";
+// for (var i = 0; i < items.length; i++) {
+//     items[i].addEventListener('mouseenter', function() {
+//         //console.log('enter');
+//         this.style.backgroundColor = RandomBgColorGenerate();
+//         this.style.boxShadow = 'white 0px 0px 8px';
+//     });
 
-//     })
+//     items[i].addEventListener('mouseleave', function() {
+//         // console.log('out');
+//         this.style.boxShadow = 'none';
+//     });
 // }
-// document.getElementById("main").innerHTML += str;
+
+
+// function RandomBgColorGenerate() {
+//     var randNum = Math.random().toString(16);
+//     return '#' + randNum.slice(2, 8);
+// }
+
+// console.log(RandomBgColorGenerate());
