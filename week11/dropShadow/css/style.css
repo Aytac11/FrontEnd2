@@ -1,0 +1,44 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+.container {
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.nav-bar {
+    background-color: blue;
+    padding: 15px;
+}
+
+.nav-bar ul {
+    display: flex;
+    padding: 0;
+}
+
+.nav-bar ul li {
+    list-style: none;
+    margin-right: 20px;
+}
+
+.nav-bar ul li a {
+    text-decoration: none;
+}
+
+.img-container {
+    margin-top: 60px;
+    cursor: pointer;
+}
+
+p {
+    width: 60%;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 60px;
+    cursor: pointer;
+    font-size: 20px;
+}
