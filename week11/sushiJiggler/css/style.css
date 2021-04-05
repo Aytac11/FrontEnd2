@@ -1,0 +1,112 @@
+.col-md-4 {
+    display: flex;
+    justify-content: center;
+}
+
+img {
+    height: 150px;
+    width: 150px;
+    object-fit: contain;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.shake {
+    animation: shake 2s;
+}
+
+@keyframes shake {
+    10%,
+    90% {
+        transform: translate3d(-1px, 0, 0);
+    }
+    20%,
+    80% {
+        transform: translate3d(2px, 0, 0);
+    }
+    30%,
+    50%,
+    70% {
+        transform: translate3d(-4px, 0, 0);
+    }
+    40%,
+    60% {
+        transform: translate3d(4px, 0, 0);
+    }
+}
+
+.jump {
+    animation: jump 2s;
+}
+
+@keyframes jump {
+    0% {
+        transform: translate3d(0, 0, 0) scale3d(1, 1, 1);
+    }
+    40% {
+        transform: translate3d(0, 30%, 0) scale3d(.7, 1.5, 1);
+    }
+    100% {
+        transform: translate3d(0, 100%, 0) scale3d(1.5, .7, 1);
+    }
+}
+
+.spin {
+    animation: spin 2s;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.grow {
+    animation: grow 2s;
+}
+
+@keyframes grow {
+    0% {
+        -webkit-transform: scale( 0);
+        -moz-transform: scale( 0);
+        -o-transform: scale( 0);
+        -ms-transform: scale( 0);
+        transform: scale( 0);
+    }
+    50% {
+        -webkit-transform: scale( 0.1);
+        -moz-transform: scale( 0.1);
+        -o-transform: scale( 0.1);
+        -ms-transform: scale( 0.1);
+        transform: scale( 0.1);
+    }
+    100% {
+        -webkit-transform: scale( 0);
+        -moz-transform: scale( 0);
+        -o-transform: scale( 0);
+        -ms-transform: scale( 0);
+        transform: scale( 0);
+    }
+}
+
+.fadeIn {
+    animation: fadeIn 2s;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        top: 100px;
+    }
+    75% {
+        opacity: 0.5;
+        top: 0px;
+    }
+    100% {
+        opacity: 1;
+    }
+}
