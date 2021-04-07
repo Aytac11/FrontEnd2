@@ -1,0 +1,64 @@
+.dice_container {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.dice_face {
+    position: relative;
+    display: inline-block;
+    height: 150px;
+    width: 150px;
+    background: #3300cc;
+    margin: 50px 20px;
+    border-radius: 5px;
+}
+
+.dot {
+    position: absolute;
+    height: 33px;
+    width: 33px;
+    margin: 9px;
+    border-radius: 50%;
+    box-shadow: 1px 1px 0 rgba(0, 0, 0, 0.7) inset, 1px 1px 0 rgba(255, 255, 255, 0.5);
+    background-color: #fff;
+}
+
+
+/* dotorder [1   5
+ 		      2 4 6
+ 		      3   7]*/
+
+.dot1 {
+    top: 3px;
+    left: 3px;
+}
+
+.dot2 {
+    top: 50px;
+    left: 3px;
+}
+
+.dot3 {
+    top: 97px;
+    left: 3px;
+}
+
+.dot4 {
+    top: 50px;
+    left: 50px;
+}
+
+.dot5 {
+    top: 3px;
+    right: 3px;
+}
+
+.dot6 {
+    right: 3px;
+    top: 50px;
+}
+
+.dot7 {
+    right: 3px;
+    top: 97px;
+}

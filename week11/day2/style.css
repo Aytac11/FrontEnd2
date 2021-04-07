@@ -1,0 +1,15 @@
+/* .container {
+    display: flex;
+} */
+
+.container div {
+    margin-right: 40px;
+}
+
+.content {
+    display: none;
+}
+
+.content.active {
+    display: block;
+}
