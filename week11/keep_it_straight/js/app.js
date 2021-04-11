@@ -13,7 +13,7 @@ addEvent('div.out', 'mouseleave', e => {
 });
 
 addEvent('.end', 'mouseenter', e => {
-    //if (e.target.getAttribute('data-target') === 'start')
+
     title.innerText = 'Win'
 
 
