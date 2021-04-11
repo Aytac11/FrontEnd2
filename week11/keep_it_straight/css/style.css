@@ -1,0 +1,65 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.start,
+.line,
+.end,
+div.out {
+    height: 40px;
+    outline: none;
+    border: 0;
+}
+
+.line {
+    width: 200px;
+    background-color: #ccc;
+}
+
+.start {
+    background-color: red;
+}
+
+.end {
+    background-color: green;
+}
+
+.end,
+.start {
+    width: 30px;
+    display: block;
+}
+
+#table div,
+.out {
+    outline: 1px solid
+}
+
+.out {
+    display: flex;
+    width: 200px;
+}
+
+
+/* #table {
+    display: flex;
+    width: 500px;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+#table div {
+    width: 50px;
+    height: 50px;
+}
+
+#table span {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: red;
+    position: absolute;
+    transition: all 100ms ease;
+} */

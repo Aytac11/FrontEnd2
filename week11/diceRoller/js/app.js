@@ -1,22 +1,36 @@
-function getRandomInt(min, max) {
-    return Math.floor(Math.random() * (max - min + 1)) + min;
-}
+  const addEvent = (selector, event, func) => {
+      const elements = document.querySelectorAll(selector);
 
+      for (var i = 0; i < elements.length; i++) {
+          elements[i].addEventListener(event, func)
+      }
+  }
 
-var btn = document.querySelector('button');
-btn.addEventListener('click', function() {
-    random = getRandomInt(1, 7);
+  const random = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min;
 
-})
+  const dices = [
+      [4],
+      [0, 8],
+      [0, 4, 8],
+      [0, 2, 6, 8],
+      [0, 2, 4, 6, 8],
+      [0, 2, 3, 5, 6, 8],
+  ];
 
-var dot4 = document.querySelectorAll('.dot4');
-for (let i = 0; i < dot4.length; i++) {
-    dot4[i].style.display = 'none'
-}
+  const dots = document.querySelectorAll('.dot');
+  dots[1].style.opacity = '0';
+  dots[4].style.opacity = '0';
+  dots[7].style.opacity = '0';
 
-// var first = getRandomInt(1, 7);
-// var second = getRandomInt(1, 7);
+  addEvent('button', 'click', () => {
+      const rand = random(0, 5);
+      console.log(rand + 1);
 
-// console.log(first);
-// console.log(second);
-// console.log(first + second);
+      for (let i = 0; i < dots.length; i++) {
+          dots[i].style.opacity = '0';
+      }
+
+      for (let i = 0; i < dices[rand].length; i++) {
+          dots[dices[rand][i]].style.opacity = '1';
+      }
+  });
