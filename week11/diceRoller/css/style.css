@@ -77,6 +77,10 @@ figure {
 
 /* Dice Roller */
 
+.score {
+    text-align: center;
+}
+
 .container {
     display: flex;
     align-items: center;
@@ -90,7 +94,8 @@ figure {
     margin-right: 50px;
 }
 
-.dot {
+.dot,
+.dot2 {
     height: 33px;
     width: 33px;
     margin: 9px;
