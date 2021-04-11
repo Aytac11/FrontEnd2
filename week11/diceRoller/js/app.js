@@ -23,14 +23,17 @@
   dots[7].style.opacity = '0';
 
   addEvent('button', 'click', () => {
-      const rand = random(0, 5);
-      console.log(rand + 1);
+      for (let j = 0; j < 2; j++) {
+          const rand = random(0, 5);
+          console.log(rand + 1);
 
-      for (let i = 0; i < dots.length; i++) {
-          dots[i].style.opacity = '0';
-      }
+          for (let i = 0; i < dots.length; i++) {
+              dots[i].style.opacity = '0';
+          }
 
-      for (let i = 0; i < dices[rand].length; i++) {
-          dots[dices[rand][i]].style.opacity = '1';
+          for (let i = 0; i < dices[rand].length; i++) {
+              dots[dices[rand][i]].style.opacity = '1';
+          }
+
       }
   });
