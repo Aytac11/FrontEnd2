@@ -6,11 +6,15 @@ const addEvent = (selector, event, func) => {
     }
 }
 
-
-addEvent('div.out', 'mouseenter', e => {
-    e.target.style.backgroundColor = 'black';
-});
+title = document.querySelector('.title');
 
 addEvent('div.out', 'mouseleave', e => {
-    e.target.style.backgroundColor = 'yellow';
+    title.innerText = 'Fail'
 });
+
+addEvent('.end', 'mouseenter', e => {
+    //if (e.target.getAttribute('data-target') === 'start')
+    title.innerText = 'Win'
+
+
+})

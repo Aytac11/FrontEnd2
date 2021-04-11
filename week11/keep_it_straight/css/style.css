@@ -4,6 +4,10 @@
     justify-content: center;
 }
 
+.text-center {
+    text-align: center;
+}
+
 .start,
 .line,
 .end,
@@ -40,26 +44,5 @@ div.out {
 .out {
     display: flex;
     width: 200px;
+    background-color: grey;
 }
-
-
-/* #table {
-    display: flex;
-    width: 500px;
-    flex-wrap: wrap;
-    position: relative;
-}
-
-#table div {
-    width: 50px;
-    height: 50px;
-}
-
-#table span {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background-color: red;
-    position: absolute;
-    transition: all 100ms ease;
-} */
