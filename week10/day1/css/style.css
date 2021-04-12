@@ -68,3 +68,7 @@ p {
     overflow: hidden;
     /* transition: 0.5s; */
 }
+
+.active {
+    display: block;
+}
