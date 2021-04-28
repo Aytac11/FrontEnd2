@@ -79,6 +79,31 @@
         color: #ff4c3b;
     }
     
+    .name {
+        position: relative;
+    }
+    
+    .hide {
+        top: 50px;
+        position: absolute;
+        z-index: 10;
+        background-color: #fff;
+        transition: all .3s linear;
+        min-width: 160px;
+        text-align: left;
+        box-shadow: 0 0 1px 0 #ebebeb;
+        transform: translateY(30px);
+        opacity: 0;
+        visibility: hidden;
+        right: 0;
+        padding: 15px 20px;
+        border-radius: 0!important;
+    }
+    
+    .name:hover {
+        visibility: visible;
+    }
+    
     .collection {
         padding-top: 30px;
         padding-bottom: 30px;
