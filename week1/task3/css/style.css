@@ -765,6 +765,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            margin: 0;
         }
         
         .nav-link {
@@ -800,10 +801,16 @@
             opacity: 0;
             pointer-events: none;
             transition: .5s;
+            z-index: 2;
+            background-color: white;
         }
         
         .dropdown ul {
             position: relative;
+        }
+        
+        .dropdown ul li {
+            list-style: none;
         }
         
         .dropdown-link>a {
@@ -813,6 +820,8 @@
             align-items: center;
             justify-content: space-between;
             transition: .3s;
+            text-decoration: none;
+            color: black;
         }
         
         .dropdown-link:hover>a {
