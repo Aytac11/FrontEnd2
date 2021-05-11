@@ -5,13 +5,16 @@
     body {
         font-family: 'Roboto', sans-serif;
     }
-    
-    .header {
+    /* .header {
         display: none;
     }
     
     .line {
         display: none;
+    } */
+    
+    img {
+        width: 100%;
     }
     
     .line {
@@ -361,6 +364,8 @@
         font-family: 'Roboto', 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
         font-weight: 300;
         text-align: center;
+        display: inline-flex;
+        text-align: left;
     }
     
     .suggestions {
@@ -409,6 +414,11 @@
         z-index: 2;
         color: white;
         text-align: center;
+    }
+    
+    .why-us .item {
+        position: relative;
+        z-index: 2;
     }
     
     .why-us i {
