@@ -11,6 +11,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
     <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
 </head>
 
@@ -163,19 +166,220 @@
     </div>
 
     <div class="bg-quote">
-        <div class="container">
+        <div class="overlay"></div>
+        <div class="container py-100">
             <div class="row company-quote">
-                <div class="col-xs-12 col-sm-2 col-sm-offset-1">
+                <div class="col-xs-12 col-sm-2 offset-sm-1">
                     <div class="title">«That's what we think»</div>
                 </div>
-                <div class="col-xs-12 col-sm-8">
+                <div class="col-xs-12 col-sm-8 company-quote-content">
                     <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to
                         using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum'.</p>
-                    <p>-Company founder <i>С.T.</i></p>
+                    <p>-- Company founder <i>С.T.</i></p>
                 </div>
             </div>
         </div>
     </div>
+
+    <div class="container">
+        <div class="our-team">
+            <h1 class="section-title">Our Best Team</h1>
+            <div class="dot"></div>
+            <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia,
+                looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites.</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="carousel owl-carousel">
+            <div class="card">
+                <img src="img/avatar-lori-harrison.jpg" alt="">
+            </div>
+            <div class="card">
+                <img src="img/avatar-christopher-tucker.jpg" alt="">
+            </div>
+            <div class="card">
+                <img src="img/avatar-louis-hawkins.jpg" alt="">
+            </div>
+            <div class="card">
+                <img src="img/avatar-susan-estrada.jpg" alt="">
+            </div>
+            <div class="card">
+                <img src="img/avatar-ann-james.jpg" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="bg-f7f7f7">
+        <div class="container">
+            <div class="our-team">
+                <h1 class="section-title">Happy Clients</h1>
+                <div class="dot"></div>
+                <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia.</p>
+            </div>
+            <div class="partners">
+                <div class="row">
+
+                    <div class="col-xs-12 col-sm-10 offset-sm-1" data-aos="fade-up" data-aos-duration="1500">
+                        <div class="row partners-list">
+                            <div class="col-xs-12 col-sm-4">
+                                <img src="img/partner-01.png" alt="">
+                            </div>
+                            <div class="col-xs-12 col-sm-4">
+                                <img src="img/partner-02.png" alt="">
+                            </div>
+                            <div class="col-xs-12 col-sm-4">
+                                <img src="img/partner-03.png" alt="">
+                            </div>
+                            <div class="col-xs-12 col-sm-4">
+                                <img src="img/partner-04.png" alt="">
+                            </div>
+                            <div class="col-xs-12 col-sm-4">
+                                <img src="img/partner-05.png" alt="">
+                            </div>
+                            <div class="col-xs-12 col-sm-4">
+                                <img src="img/partner-06.png" alt="">
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-up">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="logo">
+                            <img src="img/logo-white.png" alt="">
+                            <div class="logo-title">
+                                Ve-Theme</div>
+                        </div>
+                        <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical.</p>
+                        <address>TWITTER, INC. <br>
+                            1355 Market Street, Suite 900 <br>
+                            San Francisco, CA 94103 <br>
+                            P: (123) 456-7890</address>
+                        <div class="tags">
+                            <a href="#">web</a>
+                            <a href="#">design</a>
+                            <a href="#">clean</a>
+                            <a href="#">simple</a>
+                            <a href="#">portfolio</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="logo-title">
+                            Latest Posts
+                        </div>
+                        <a href="#" class="blog-popular-post">
+                            <img src="img/project-01-thumb.jpg" alt="">
+                            <div class="body">
+                                <div class="post-date">
+                                    Jan 15, 2017
+                                </div>
+                                <div class="post-title">
+                                    There are many variations of passages f Lorem Ipsum
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="blog-popular-post pt-2">
+                            <img src="img/project-07-thumb.jpg" alt="">
+                            <div class="body">
+                                <div class="post-date">
+                                    Jan 15, 2017
+                                </div>
+                                <div class="post-title">
+                                    There are many variations of passages f Lorem Ipsum
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="logo-title">
+                            Instagram
+                        </div>
+                        <div class="mini-gallery-wrapper">
+                            <a href="#" class="gallery-image">
+                                <img src="img/project-01-thumb.jpg" alt="">
+                            </a>
+                            <a href="#" class="gallery-image">
+                                <img src="img/project-01-thumb.jpg" alt="">
+                            </a>
+                            <a href="#" class="gallery-image">
+                                <img src="img/project-01-thumb.jpg" alt="">
+                            </a>
+                            <a href="#" class="gallery-image">
+                                <img src="img/project-01-thumb.jpg" alt="">
+                            </a>
+                            <a href="#" class="gallery-image">
+                                <img src="img/project-01-thumb.jpg" alt="">
+                            </a>
+                            <a href="#" class="gallery-image">
+                                <img src="img/project-01-thumb.jpg" alt="">
+                            </a>
+                            <a href="#" class="gallery-image">
+                                <img src="img/project-01-thumb.jpg" alt="">
+                            </a>
+                            <a href="#" class="gallery-image">
+                                <img src="img/project-01-thumb.jpg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <ul class="icons-list">
+                <li class="icon">
+                    <i class="fab fa-facebook-f"></i>
+                </li>
+                <li class="icon">
+                    <i class="fab fa-twitter"></i>
+                </li>
+                <li class="icon">
+                    <i class="fab fa-linkedin-in"></i>
+                </li>
+                <li class="icon">
+                    <i class="fab fa-instagram"></i>
+                </li>
+            </ul>
+            <p>
+                © Copyright 2015-2017
+                <a href="#">Valery Timofeev</a>. All Rights Reserved.
+            </p>
+
+        </div>
+    </footer>
+    <script>
+        $(".carousel").owlCarousel({
+            margin: 40,
+            loop: true,
+
+            responsive: {
+                0: {
+                    items: 1,
+                    nav: false
+                },
+                250: {
+                    items: 2,
+                    nav: false
+                },
+                500: {
+                    items: 3,
+                    nav: false
+                },
+                1000: {
+                    items: 4,
+                    nav: false
+                }
+            }
+        });
+    </script>
 
     <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
     <script src="js/jquery-3.5.1.min.js"></script>
