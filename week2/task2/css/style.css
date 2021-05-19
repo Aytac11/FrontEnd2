@@ -84,6 +84,10 @@ img {
     background: #7ca7b2;
 }
 
+.navbar-dark .navbar-toggler {
+    border-color: transparent !important;
+}
+
 .overlay {
     position: absolute;
     top: 0;
