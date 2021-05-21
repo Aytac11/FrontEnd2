@@ -103,9 +103,12 @@ img {
     color: white;
     position: relative;
     z-index: 2;
-    height: 300px;
+    /* height: 300px; */
     display: flex;
     align-items: center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .best-features,
@@ -117,11 +120,11 @@ img {
 
 .breadcrumb-container {
     display: flex;
-    justify-content: flex-end;
 }
 
 .breadcrumb {
     background: transparent;
+    padding: 0;
 }
 
 .our-team .section-title {
@@ -230,6 +233,7 @@ img {
 
 .company-quote-content {
     border-left: 5px solid white;
+    margin-left: 21px;
 }
 
 .our-team {
@@ -300,9 +304,10 @@ img {
 }
 
 .owl-carousel .owl-item img {
-    width: 200px !important;
-    height: 200px !important;
+    /* width: 200px !important;
+    height: 200px !important; */
     object-fit: cover;
+    overflow: hidden;
 }
 
 .partners {
@@ -405,6 +410,8 @@ img {
 .footer-bottom p {
     font-size: 85%;
     color: #ffffffe6;
+    width: 90%;
+    margin: 0 auto;
 }
 
 .icons-list {
@@ -439,7 +446,24 @@ img {
 
 /* Medium */
 
-@media (min-width: 768px) {}
+@media (min-width: 768px) {
+    .header-content {
+        height: 300px;
+        position: relative;
+        top: 0;
+        transform: none;
+    }
+    .breadcrumb-container {
+        justify-content: flex-end;
+    }
+    .company-quote-content {
+        margin-left: 0;
+    }
+    .footer-bottom p {
+        width: 90%;
+        margin: 0 auto;
+    }
+}
 
 
 /* Large */
