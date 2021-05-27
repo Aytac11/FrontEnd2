@@ -112,10 +112,6 @@ p {
     padding-right: 40px;
 }
 
-a:hover {
-    color: black;
-}
-
 .dots {
     position: absolute;
 }
