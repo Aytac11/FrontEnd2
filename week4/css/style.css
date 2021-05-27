@@ -37,6 +37,10 @@ p {
     padding-top: 72px;
 }
 
+.mb-0 {
+    margin-bottom: 0 !important;
+}
+
 .mb-201 {
     margin-bottom: 201px;
 }
@@ -108,9 +112,16 @@ p {
     padding-right: 40px;
 }
 
+a:hover {
+    color: black;
+}
+
 .dots {
     position: absolute;
-    top: 160px;
+}
+
+.dots-header {
+    top: 140px;
     left: 10px;
 }
 
@@ -280,15 +291,19 @@ p {
 
 /* -----------download-------------- */
 
+.downloads-container {
+    position: relative;
+}
+
 .downloads {
     margin-top: 0;
     padding-bottom: 216px;
+    display: flex;
 }
 
 .dots2 {
-    top: 82%;
+    top: 20px;
     right: 10px;
-    left: auto;
 }
 
 .arrow {
@@ -369,13 +384,13 @@ p {
 .dots-opinion1 {
     right: 0;
     top: 10px;
-    left: auto;
+    /* left: auto; */
 }
 
 .dots-opinion2 {
     left: -50px;
     bottom: 25px;
-    top: auto;
+    /* top: auto; */
 }
 
 .slider-container {
@@ -478,4 +493,93 @@ p {
 
 .btn-all {
     line-height: 40px;
+}
+
+
+/* -----------------------footer--------------------------- */
+
+footer {
+    background: linear-gradient(183.41deg, #67C3F3 -8.57%, #5A98F2 82.96%);
+    padding-top: 109px;
+    padding-bottom: 109px;
+    position: relative;
+}
+
+.dots-left {
+    bottom: 10px;
+    left: 10px;
+}
+
+.dots-right {
+    top: -82px;
+    right: 94px;
+}
+
+.footer-container {
+    display: flex;
+}
+
+.footer-logo-container {
+    width: 40%;
+}
+
+.footer-content {
+    width: 391px;
+}
+
+.footer-logo .logo-trafalgar {
+    background-color: white;
+}
+
+.footer-logo .logo-trafalgar span {
+    color: #5A98F2;
+}
+
+.footer-logo {
+    padding-bottom: 17px;
+}
+
+footer,
+footer p,
+footer a {
+    color: white !important;
+}
+
+footer p,
+footer a {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.footer-item {
+    width: 20%;
+}
+
+.footer-item h1 {
+    margin: 0;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 60px;
+}
+
+.footer-item ul {
+    padding: 0;
+    margin: 0;
+}
+
+.footer-item li {
+    list-style: none;
+}
+
+.footer-item li a {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 38px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.footer-content {
+    padding-bottom: 31px;
 }
