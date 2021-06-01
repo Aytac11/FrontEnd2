@@ -1,0 +1,339 @@
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+li {
+  list-style: none;
+}
+
+.container {
+  padding-right: 165px;
+  padding-left: 165px;
+}
+
+header {
+  padding-top: 66px;
+  padding-bottom: 62px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.logo {
+  width: 20%;
+}
+
+.logo h1 {
+  font-family: "Playfair Display", serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 32px;
+}
+
+nav {
+  width: 60%;
+}
+
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+nav ul li {
+  padding-right: 40px;
+}
+
+nav ul li a {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 28px;
+  color: #222831;
+}
+
+.login-signUp {
+  width: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.btn, .btn-fill, .btn-empty {
+  padding: 12px 24px;
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.btn-fill {
+  background-color: #FF5722;
+  color: white;
+}
+
+.btn-empty {
+  color: #FF5722;
+}
+
+.intro-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  color: #222831;
+  padding-bottom: 8px;
+}
+
+.intro-title span {
+  margin-left: 15px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 73px;
+  border-bottom: 2px solid #222831;
+}
+
+.frispes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.frispes .frispes__title {
+  width: 667px;
+  font-family: "Lora", serif;
+  font-weight: bold;
+  font-size: 52px;
+  line-height: 67px;
+  margin-right: 61px;
+}
+
+.frispes .frispes__title span {
+  color: #DD2C00;
+}
+
+.frispes .frispes__content {
+  width: 382px;
+  font-family: "Lato", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  color: #6A6A6A;
+  padding-top: 13px;
+}
+
+.container-main {
+  background-image: url("../img/image 10.png");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: contain;
+  width: 100%;
+  height: 598px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.modal {
+  width: 445px;
+  background-color: #10375C;
+  color: white;
+}
+
+.modal__title {
+  font-family: "Lora", serif;
+  font-weight: bold;
+  font-size: 34px;
+  line-height: 44px;
+  padding-top: 42px;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.modal__item {
+  background-color: #0D2C4A;
+  padding: 8px 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 333px;
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-bottom: 17px;
+}
+
+.modal__item .modal__item__left__type {
+  font-family: "Lato", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  display: block;
+}
+
+.modal__item .modal__item__left__name {
+  display: block;
+}
+
+.modal__item__right {
+  background-image: url("../img/XMLID 1506.png");
+  width: 12px;
+  height: 7px;
+}
+
+.modal__btn {
+  margin-left: 40px;
+  margin-right: 40px;
+  padding-bottom: 31px;
+}
+
+.modal__btn a {
+  font-family: "Lato", sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 28px;
+  color: white;
+  background-color: #FF5722;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  padding-top: 13px;
+  padding-bottom: 13px;
+}
+
+.spaces__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 112px;
+  padding-bottom: 56px;
+}
+
+.spaces h2 {
+  font-family: "Lora", serif;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 51px;
+}
+
+.spaces p {
+  width: 452px;
+  font-family: "Lato", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 28px;
+  color: #9A9A9A;
+}
+
+.spaces__icons {
+  width: 168px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.spaces__icons__next,
+.spaces__icons__prev {
+  width: 100%;
+  height: 26px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.spaces__icons__prev {
+  background-image: url("../img/Group 2.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.spaces__icons__next {
+  background-image: url("../img/Group 1.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.spaces__img__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.spaces__img__container .spaces__img {
+  position: relative;
+  height: 467px;
+}
+
+.spaces__img__container .spaces__img img {
+  display: inherit;
+}
+
+.spaces__img__container .spaces__img span {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 72px;
+  height: 72px;
+  background-color: #FF5722;
+  background-image: url("../img/XMLID 1506 (1).png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto;
+}
