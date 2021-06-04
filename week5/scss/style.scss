@@ -11,6 +11,10 @@ p {
     padding: 0;
 }
 
+.mb-0 {
+    margin-bottom: 0 !important;
+}
+
 a {
     text-decoration: none;
     cursor: pointer;
@@ -203,6 +207,10 @@ nav {
     }
 }
 
+.spaces {
+    margin-bottom: 112px;
+}
+
 .spaces__header {
     display: flex;
     justify-content: space-between;
@@ -211,7 +219,7 @@ nav {
     padding-bottom: 56px;
 }
 
-.spaces h2 {
+h2 {
     font-family: $mainFont;
     font-weight: bold;
     font-size: 40px;
@@ -251,27 +259,144 @@ nav {
 }
 
 .spaces__img__container {
+    width: 100%;
     display: flex;
     justify-content: space-between;
     .spaces__img {
-        position: relative;
         height: 467px;
-        img {
-            display: inherit;
+        width: 33.33%;
+        .spaces__img__item {
+            position: relative;
+            img {
+                display: inherit;
+                width: 100%;
+                // height: 419px;
+            }
+            span {
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                display: inline-flex;
+                width: 72px;
+                height: 72px;
+                background-color: #FF5722;
+                @include backgroundImg(url('../img/XMLID\ 1506\ \(1\).png'),
+                center,
+                no-repeat,
+                auto);
+            }
+            .check {
+                width: 255px;
+                background-position: 90% 50%;
+                font-family: $secondaryFont;
+                font-weight: bold;
+                font-size: 18px;
+                line-height: 22px;
+                text-align: center;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: white;
+            }
         }
-        span {
-            position: absolute;
-            left: 0;
-            bottom: 0;
-            display: inline-flex;
-            width: 72px;
-            height: 72px;
-            background-color: #FF5722;
-            @include backgroundImg(url('../img/XMLID\ 1506\ \(1\).png'),
-            center,
-            no-repeat,
-            auto);
+        .spaces__img__item__center {
+            height: 467px;
+            background-color: #10375C;
+            display: flex;
+            align-items: center;
+            .spaces__img__item__center__info {
+                text-align: center;
+                width: 253px;
+                margin: 0 auto;
+                h2 {
+                    font-family: $mainFont;
+                    font-weight: normal;
+                    font-size: 32px;
+                    line-height: 41px;
+                    color: white;
+                    margin-bottom: 14px;
+                }
+                p {
+                    font-family: $secondaryFont;
+                    font-weight: 500;
+                    font-size: 18px;
+                    line-height: 28px;
+                    color: white;
+                }
+            }
+        }
+        p {
+            font-family: $secondaryFont;
+            font-weight: bold;
+            font-size: 20px;
+            line-height: 24px;
+            text-align: center;
+            width: 100%;
+            margin-top: 25px;
         }
     }
-    .spaces__img__center {}
+    .spaces__img__center {
+        margin: 0 30px;
+        position: relative;
+        .right-pic {
+            position: absolute;
+            z-index: 2;
+            top: 15px;
+            right: 15px;
+        }
+    }
+}
+
+.whyFrispes {
+    display: flex;
+    align-items: center;
+    .whyFrispes__left {
+        width: 45%;
+        .whyFrispes__left__items {
+            display: flex;
+            justify-content: space-between;
+            .whyFrispes__left__item {
+                display: flex;
+                margin-bottom: 64px;
+                img {
+                    width: 32px;
+                    height: 32px;
+                    margin-right: 24px;
+                }
+                .whyFrispes__left__item__info {
+                    p {
+                        font-family: $mainFont;
+                        font-size: 32px;
+                        line-height: 24px;
+                        color: #10375C;
+                        margin-bottom: 8px;
+                    }
+                    span {
+                        font-family: $secondaryFont;
+                        font-size: 16px;
+                        line-height: 26px;
+                        color: #9A9A9A;
+                    }
+                }
+            }
+        }
+    }
+    .whyFrispes__right {
+        color: white;
+        background-color: #10375C;
+        margin-left: 71px;
+        padding: 53px;
+        width: 433px;
+        p {
+            margin-top: 24px;
+            font-size: 20px;
+            font-weight: 500;
+        }
+        div {
+            color: white;
+        }
+        span {
+            border-color: white;
+        }
+    }
 }

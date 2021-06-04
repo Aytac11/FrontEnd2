@@ -9,6 +9,10 @@ p {
   padding: 0;
 }
 
+.mb-0 {
+  margin-bottom: 0 !important;
+}
+
 a {
   text-decoration: none;
   cursor: pointer;
@@ -242,6 +246,10 @@ nav ul li a {
   padding-bottom: 13px;
 }
 
+.spaces {
+  margin-bottom: 112px;
+}
+
 .spaces__header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -256,7 +264,7 @@ nav ul li a {
   padding-bottom: 56px;
 }
 
-.spaces h2 {
+h2 {
   font-family: "Lora", serif;
   font-weight: bold;
   font-size: 40px;
@@ -305,6 +313,7 @@ nav ul li a {
 }
 
 .spaces__img__container {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -314,15 +323,20 @@ nav ul li a {
 }
 
 .spaces__img__container .spaces__img {
-  position: relative;
   height: 467px;
+  width: 33.33%;
 }
 
-.spaces__img__container .spaces__img img {
+.spaces__img__container .spaces__img .spaces__img__item {
+  position: relative;
+}
+
+.spaces__img__container .spaces__img .spaces__img__item img {
   display: inherit;
+  width: 100%;
 }
 
-.spaces__img__container .spaces__img span {
+.spaces__img__container .spaces__img .spaces__img__item span {
   position: absolute;
   left: 0;
   bottom: 0;
@@ -336,4 +350,152 @@ nav ul li a {
   background-repeat: no-repeat;
   background-position: center;
   background-size: auto;
+}
+
+.spaces__img__container .spaces__img .spaces__img__item .check {
+  width: 255px;
+  background-position: 90% 50%;
+  font-family: "Lato", sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: white;
+}
+
+.spaces__img__container .spaces__img .spaces__img__item__center {
+  height: 467px;
+  background-color: #10375C;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.spaces__img__container .spaces__img .spaces__img__item__center .spaces__img__item__center__info {
+  text-align: center;
+  width: 253px;
+  margin: 0 auto;
+}
+
+.spaces__img__container .spaces__img .spaces__img__item__center .spaces__img__item__center__info h2 {
+  font-family: "Lora", serif;
+  font-weight: normal;
+  font-size: 32px;
+  line-height: 41px;
+  color: white;
+  margin-bottom: 14px;
+}
+
+.spaces__img__container .spaces__img .spaces__img__item__center .spaces__img__item__center__info p {
+  font-family: "Lato", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 28px;
+  color: white;
+}
+
+.spaces__img__container .spaces__img p {
+  font-family: "Lato", sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  width: 100%;
+  margin-top: 25px;
+}
+
+.spaces__img__container .spaces__img__center {
+  margin: 0 30px;
+  position: relative;
+}
+
+.spaces__img__container .spaces__img__center .right-pic {
+  position: absolute;
+  z-index: 2;
+  top: 15px;
+  right: 15px;
+}
+
+.whyFrispes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.whyFrispes .whyFrispes__left {
+  width: 45%;
+}
+
+.whyFrispes .whyFrispes__left .whyFrispes__left__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.whyFrispes .whyFrispes__left .whyFrispes__left__items .whyFrispes__left__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 64px;
+}
+
+.whyFrispes .whyFrispes__left .whyFrispes__left__items .whyFrispes__left__item img {
+  width: 32px;
+  height: 32px;
+  margin-right: 24px;
+}
+
+.whyFrispes .whyFrispes__left .whyFrispes__left__items .whyFrispes__left__item .whyFrispes__left__item__info p {
+  font-family: "Lora", serif;
+  font-size: 32px;
+  line-height: 24px;
+  color: #10375C;
+  margin-bottom: 8px;
+}
+
+.whyFrispes .whyFrispes__left .whyFrispes__left__items .whyFrispes__left__item .whyFrispes__left__item__info span {
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  line-height: 26px;
+  color: #9A9A9A;
+}
+
+.whyFrispes .whyFrispes__right {
+  color: white;
+  background-color: #10375C;
+  margin-left: 71px;
+  padding: 53px;
+  width: 433px;
+}
+
+.whyFrispes .whyFrispes__right p {
+  margin-top: 24px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.whyFrispes .whyFrispes__right div {
+  color: white;
+}
+
+.whyFrispes .whyFrispes__right span {
+  border-color: white;
 }
