@@ -248,9 +248,10 @@ nav ul li a {
 
 .spaces {
   margin-bottom: 112px;
+  padding-top: 112px;
 }
 
-.spaces__header {
+.section__header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -260,8 +261,11 @@ nav ul li a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-top: 112px;
   padding-bottom: 56px;
+}
+
+.section__header h2 {
+  color: #10375C;
 }
 
 h2 {
@@ -498,4 +502,99 @@ h2 {
 
 .whyFrispes .whyFrispes__right span {
   border-color: white;
+}
+
+.facilities {
+  padding: 112px;
+}
+
+.facilities .section__header {
+  width: 570px;
+}
+
+.facilities .facilities__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.facilities .facilities__items .facilities__item__left {
+  width: 30%;
+}
+
+.facilities .facilities__items .facilities__item__left ul {
+  padding: 0;
+}
+
+.facilities .facilities__items .facilities__item__left ul li {
+  list-style: none;
+}
+
+.facilities .facilities__items .facilities__item__left ul li a {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  font-family: "Lato", sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 24px;
+  padding: 24px;
+  color: #222831;
+}
+
+.facilities .facilities__items .facilities__item__left ul li a:hover {
+  background: #FF5722;
+}
+
+.facilities .facilities__items .facilities__item__right {
+  width: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.become-member {
+  background: #10375C;
+  padding-top: 71px;
+  background-image: url("../img/portrait-photo-of-smiling-man-with-his-arms-crossed-standing-2379004 1.png");
+  background-repeat: no-repeat;
+  background-position: 80%;
+  background-size: contain;
+}
+
+.become-member .intro-title {
+  color: white;
+}
+
+.become-member .intro-title span {
+  border-color: white;
+}
+
+.become-member .section__header {
+  display: block;
+  width: 40%;
+}
+
+.become-member .section__header h2 {
+  color: white;
+  padding-bottom: 16px;
+}
+
+.become-member .section__header p {
+  font-family: "Lato", sans-serif;
+  font-size: 20px;
+  line-height: 30px;
+  color: #DFDFDF;
+  padding-bottom: 33px;
+}
+
+.become-member .section__header .modal__btn {
+  margin-left: 0;
+}
+
+.become-member .section__header .modal__btn a {
+  width: 90%;
 }
