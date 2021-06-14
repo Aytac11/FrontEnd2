@@ -3,7 +3,7 @@ let arr = [1, 3, 5, 6, undefined, null, true, false, {}, 34, 'FrontEndMasters', 
 let newArr = [];
 for (let i = 0; i < arr.length; i++) {
     if (!isNaN(arr[i]) && arr[i] !== null && arr[i] !== true && arr[i] !== false) {
-        newArr += Number(arr[i]) + " ";
+        newArr.push(Number(arr[i]));
     }
 }
 

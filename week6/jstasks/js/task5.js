@@ -6,7 +6,7 @@ for (let i = 0; i < arr.length; i++) {
     if (isNaN(elem)) {
         continue;
     }
-    newArr += elem + " ";
+    newArr.push(elem);
 }
 
 console.log(newArr)
