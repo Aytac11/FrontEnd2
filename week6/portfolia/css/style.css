@@ -21,16 +21,20 @@
 }
 
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 header {
-    position: relative;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+    background-color: white;
 }
 
 nav {
     display: flex;
     justify-content: space-between;
+    position: relative;
 }
 
 nav .mainMenu {
@@ -48,7 +52,7 @@ nav .mainMenu li a {
 }
 
 nav .mainMenu li a:hover {
-    background: #b5b5f7;
+    color: #2643b8;
 }
 
 nav .openMenu {
@@ -100,7 +104,7 @@ nav .logo h1 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 90vh;
+    height: 100vh;
     justify-content: center;
     padding-bottom: 70px;
 }
@@ -202,8 +206,12 @@ nav .logo h1 {
     display: flex;
 }
 
+.myImg-container {
+    padding-right: 0;
+}
+
 .myImg-container img {
-    width: 345px;
+    width: 100%;
     height: 700px;
     object-fit: cover;
 }
@@ -212,7 +220,7 @@ nav .logo h1 {
     padding: 70px 0 70px 70px;
 }
 
-.aboutMe__content h1 {
+h1 {
     font-size: 50px;
     font-weight: 700;
     padding-bottom: 50px;
@@ -260,6 +268,102 @@ nav .logo h1 {
     background: #3e64ff;
     border: 1px solid #3e64ff !important;
     color: #fff !important;
+}
+
+
+/* ---------- Education--------------- */
+
+.education {
+    padding-top: 100px;
+}
+
+
+/* -----------my blog------------- */
+
+.myBlog h1 {
+    text-align: center;
+}
+
+.myBlog__item {
+    margin-bottom: 50px;
+    padding: 40px 50px;
+    box-shadow: 0px 1px 40px 0px rgb(223 223 223 / 50%);
+}
+
+.myBlog__item h3 {
+    padding-bottom: 15px;
+    height: 80px;
+    overflow: hidden;
+}
+
+.myBlog__item p {
+    height: 150px;
+    overflow: hidden;
+    color: rgb(129, 127, 127);
+}
+
+.myBlog__item i {
+    margin-left: 10px;
+}
+
+.myBlog__item a {
+    text-decoration: none;
+    color: #3e64ff;
+}
+
+.myBlog__item a:hover {
+    color: #2643b8;
+}
+
+
+/* ----------footer----------------- */
+
+.bg-b5b5f7 {
+    background-color: #3e64ff;
+    color: white;
+}
+
+footer {
+    margin-top: 100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+footer h1 {
+    padding-bottom: 30px;
+}
+
+footer p {
+    line-height: 1.6;
+}
+
+.footer__item:first-child p {
+    width: 80%;
+}
+
+.footer__item ul li {
+    list-style: none;
+    cursor: pointer;
+    padding-bottom: 10px;
+}
+
+.footer__item__center ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer__item__center ul li a:hover {
+    color: black;
+}
+
+.footer__item ul li i {
+    margin-right: 15px;
+}
+
+.active {
+    background-color: blue;
+    color: red;
+    transition: .5s ease-out;
 }
 
 
