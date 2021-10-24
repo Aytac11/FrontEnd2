@@ -8,16 +8,35 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
-    <div class="container">
-        <!-- <div class="line"></div> -->
-
+<body class="bg-orange">
+    <!-- <div class="container">
         <div class="out" data-target="start">
             <span class="start"></span>
         </div>
         <span class="end" data-target="middle"></span>
     </div>
-    <h1 class="title text-center" data-target="end"></h1>
+    <h1 class="title text-center" data-target="end"></h1> -->
+
+    <!-- --------------------version 2---------------  -->
+
+    <div class="container">
+        <div class="d-flex" id="js-over">
+            <div class="w-10 bg-red left"></div>
+            <div></div>
+            <div class="w-10 bg-blue right"></div>
+        </div>
+    </div>
+
+
+    <div id="message" class="d-flex jc-center ai-center flex-column mt-100 d-none">
+        <h1></h1>
+        <h2></h2>
+
+        <div class="d-flex">
+            <button></button>
+            <button>Start Over</button>
+        </div>
+    </div>
 
     <script src="js/app.js"></script>
 </body>

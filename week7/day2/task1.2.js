@@ -3,15 +3,15 @@
 
 const alph = "abcçdeəfgğhxıijkqlmnoöprsştuüvyz";
 const sen = "ace";
-let s ="";
+let s = "";
 
-    for(let i=0; i<alph.length; i++){
-        for(let j = 0; j<sen.length; j++){
-           if(alph[i] == sen[j]){
-               s += alph[i+1];
-           }
+for (let i = 0; i < alph.length; i++) {
+    for (let j = 0; j < sen.length; j++) {
+        if (alph[i] == sen[j]) {
+            s += alph[i + 1];
         }
-       
     }
 
-    console.log(s);
+}
+
+console.log(s);

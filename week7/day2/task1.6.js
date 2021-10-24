@@ -6,10 +6,10 @@ let remainder;
 let s = 0;
 
 
-while(num>0){
-    remainder = num%10;
-    num = Math.floor(num/10);
-    s+=remainder;
+while (num > 0) {
+    remainder = num % 10;
+    num = Math.floor(num / 10);
+    s += remainder;
 }
 
 console.log(s);
